@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Transaction</title>
+  </head>
+  <body>
+    <section>
+    <div class="navimg">
+        <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <div class="container">
+              <span class="navbar-brand h1 mx-auto">💸💲Money Bank💲💸</span>
+        </nav>    
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" style="font-size: larger ; color:black; text-align: center;" aria-current="page" href="index.html">Home</a>
+            </li>
+      </ul>
+    </div>
+    <div class="details">
+        <h2>Name : Utkarsh</h2>
+        <h3>Balance : Rs<span id="spanbal">7000</span></h3>
+        <div class="hisbtn">
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Send Money</button>
+          <button id="ltbtn" type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#lasttra">Last Transaction</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Sending Money to</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="hisform" action="">
+                  <div class="send-form">
+                    <label for="name">Name</label>
+                    <input id="name" class="form-control shadow-none" type="text" placeholder="recepient's  Name">
+                    <label for="name" style="margin-top: 1rem;">Username</label>
+                    <input id="uname" class="form-control shadow-none" type="text" placeholder="recepient's username">
+                    <label for="name" style="margin-top: 1rem;">Amount</label>
+                    <input id="amount" class="form-control shadow-none" type="text" placeholder="enter amount">
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="resetbtn" class="btn btn-secondary">Reset</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button id="mavbtn" type="button" class="btn btn-primary" data-dismiss="modal">SEND</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="lasttra" data-backdrop="static" data-keyboard="false" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Last Transaction</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="ltbody">You sent Rs80 to Suyash.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table1">
+      <table id="histable" class="table table-striped table-bordered table-hover">
+          <tr class="thb bg-dark" style="color: white;">
+            <th scope="col">Name</th>
+            <th scope="col">Username</th>
+            <th scope="col">Money Sent(Rs)</th>
+          </tr>
+          <tbody style="text-align: center;">
+          <tr>
+            <td>Ram</td>
+            <td>ram@money.com</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Nikhil</td>
+            <td>nikhil@money.com</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Suyash</td>
+            <td>suyash@money.com</td>
+            <td>80</td>
+          </tr>
+         </tbody>
+        </table>
+    </div>
+</section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="app.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,97 @@
+.h1{
+    font-size: 2rem !important;
+}
+.mb{
+    margin-left: 2rem;
+}
+.navimg{
+    background-color: tan;
+    }
+.title{
+    text-align: center;
+    padding: 2rem;
+    line-height: 4rem;
+}
+.traimg{
+    width: 100%;
+    border-radius: 20%;
+}
+.sendmoney{
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+.space1{
+    
+    text-align: center;
+    padding: 7rem 5rem 4rem 5rem;
+}
+.space0{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+@media screen and (max-width: 766px){
+    .sendmoney{
+        margin-top: 3.5rem;
+    }
+}
+/* .col{
+    margin-left:52rem;
+    font-size: large;
+} */
+.colu{
+    margin-left: 3rem;
+    font-size: large;
+}
+#footer{
+    background-color: cadetblue;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.socicon{
+    color: black;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin: 1rem 1rem 1.5rem;
+}
+
+
+
+.details{
+    text-align: center;
+    padding: 2rem;
+}
+.hisbtn{
+    padding: 1.2rem;
+}
+.send-form input{
+    border: none;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+
+}
+.send-form label{
+    pointer-events: none;
+}
+
+input:focus {
+    border-bottom: rgb(243, 97, 146);
+    outline: none;
+}
+.table1{
+    padding: 3rem 6rem;
+    background-color:rgb(171, 187, 180);
+    
+}
+.table{
+   background-color: white !important;
+}
+
+.thb{
+    text-align: center;
+}
+
